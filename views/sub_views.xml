@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="Subject_detail_tree" model="ir.ui.view">
+        <field name="name">Subject_detail_tree</field>
+        <field name="model">school.subject</field>
+        <field name="arch" type="xml">
+                <tree string = "Subject List">
+                        <field name="total"/>
+                        <field name="sub1"/>
+                        <field name="sub2"/>
+                        <field name="sub3"/>
+                        <field name="sub4"/>
+                        <field name="sub5"/>
+                </tree>
+        </field>
+    </record>
+
+    <record id="Subject_detail_form" model="ir.ui.view">
+        <field name="name">Subject_detail_form</field>
+        <field name="model">school.subject</field>
+        <field name="arch" type="xml">
+                <form string = "">
+                    <group string = "">
+                        <field name="name"/>
+                        <field name="gender"/>
+                        <field name="total"/>
+                        <field name="sub1"/>
+                        <field name="sub2"/>
+                        <field name="sub3"/>
+                        <field name="sub4"/>
+                        <field name="sub5"/>
+                    </group>
+                </form>
+        </field>
+    </record>
+</odoo>
